@@ -1,18 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package fr.eni.variables;
 
 import java.util.Arrays;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.Scanner;
-
-/**
- *
- * @author erwan
- */
 public class Variables {
 
     public static void main(String[] args) {
@@ -43,6 +34,7 @@ public class Variables {
         Scanner scanInput  = new Scanner(System.in);
         System.out.print("Saisir une chaîne A : ");
         String strA = scanInput.next();
+        repet( intA, strA);
         System.out.print("Saisir une chaîne B : ");
         String strB = scanInput.next();
         String strAplusB = strA + " " + strB;
@@ -64,7 +56,13 @@ public class Variables {
         System.out.println(Arrays.toString(arrStrA));
         arrDblA[0] = 0;
         System.out.println(Arrays.toString(arrDblA));
-        // --------------------------------------------------
-        
+        // --------------------------------------------------    
+    }
+public static void repet(int nbRepet, String chaineRepet)
+    {
+        for (int i = 0; i<=nbRepet; i++)
+        {
+        System.out.println(chaineRepet); 
+        }
     }
 }
